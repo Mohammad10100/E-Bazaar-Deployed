@@ -1,0 +1,18 @@
+.section-4{
+    height: 100vh;
+}
+
+@media (min-wdith:1200px){
+    .section-4{
+        
+        width: 100%;
+        .sc4div1{
+            flex-basis: 50%;
+            background-color: rgb(54, 152, 54);
+
+        }
+        .sc4-div2{
+            flex-basis: 50%;
+        }
+    }
+}

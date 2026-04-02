@@ -1,0 +1,61 @@
+.main-searchBar{
+    width: 100%;
+    height: 40vh;
+    // background-image: url("https://firebasestorage.googleapis.com/v0/b/ebazaar-dc176.appspot.com/o/BannerImage%2Fpngegg%20(1).png?alt=media&token=e4a43ac6-41d1-4493-a125-ed09de573875");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .msb-div1{
+        
+        img{
+            width: 100%;
+        }
+    }
+    .msb-div2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            font-family: 'Mulish', sans-serif;
+
+            color: rgb(63, 63, 63);
+            color: green;
+            
+            background-color: rgb(164, 231, 164);
+        }
+        input{
+            // font-family: 'Mulish', sans-serif;
+            font-size: 600;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .msb-div1{
+        display: none;
+    }
+    .msb-div2{
+        p{
+            font-size: 30px;
+            padding: 5px 20px;
+        }
+        width: 50%;
+    }
+}
+
+@media (max-width:1200px){
+    .msb-div1{
+        display: none;
+    }
+    .msb-div2{
+        width: 80%;
+        p{
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 8px;
+        }
+    }
+}

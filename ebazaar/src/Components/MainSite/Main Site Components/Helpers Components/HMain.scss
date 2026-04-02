@@ -1,0 +1,89 @@
+.hm-main-container{
+    display: flex;
+    width: 100%;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    .filter-search-btn{
+        font-family: 'Mulish', sans-serif;
+        color: white;
+        transition: 0.4s;
+        &:hover{
+            background-color: rgb(29, 130, 29);
+        }
+    }
+    .hm-main-section{
+        width: 85%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        
+        .hm-filter-container{
+            
+            label{
+                font-family: 'Mulish', sans-serif;
+                color: rgb(50, 50, 50);
+            }
+            margin-right: 20px;
+            padding: 10px 20px;
+            display: flex;
+            background-color: white;
+            height: fit-content;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                display: inline;
+                width: 80%;
+            }
+            h1{
+                font-family: 'Mulish', sans-serif;
+                color: rgb(50, 50, 50);
+
+            }
+            p{
+                font-family: 'Mulish', sans-serif;
+                font-size: 10px;
+            }
+        }
+    }
+    .city-search{
+        padding: 10px 10px;
+        border:solid 2px lightgray;
+        font-family: 'Mulish', sans-serif;
+        &:focus{
+            outline: none;
+        }
+    }
+    .hm-cards-container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:1200px){
+    
+    .hm-cards-container{
+        width: 70%;
+    }
+    .hm-filter-container{
+        width: 30%!important;
+        
+    }
+}
+
+@media (max-width:1200px) {
+    .hm-main-section{
+        flex-direction: column;
+    }
+    .hm-cards-container{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+    .hm-filter-container{
+        display: none!important;
+    }
+}

@@ -1,0 +1,27 @@
+.ProfleCHead-container{
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .div-1{
+        p{
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(33, 33, 33);
+            font-size: 20px;
+        }
+    }
+    .div-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .icon{
+            font-size: 35px;
+            color: rgb(28, 28, 28);
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}

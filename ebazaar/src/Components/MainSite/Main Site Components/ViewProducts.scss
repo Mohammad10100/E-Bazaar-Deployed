@@ -1,0 +1,227 @@
+.rp-text{
+
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+}
+.div-v-1{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 7rem;
+    .likeButton{
+        background-color: rgb(51, 51, 51);
+        padding: 4px 10px;
+        width: fit-content;
+        border-radius: 12px;
+    }
+    .item-description{
+        font-family: 'Mulish', sans-serif;
+        color: rgb(35, 35, 35);
+    }
+    .div-1{
+        flex-basis: 60%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-family: 'Mulish', sans-serif;
+            background-color: rgb(65, 194, 101);
+            padding: 5px 10px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .item-div{
+            height: 50vh;
+            width: 50vh;
+            background-color: rgb(71, 230, 116);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 400px;
+                position: relative;
+                
+            }
+        }
+    }
+    .div-2{
+        flex-basis: 40%!important;
+        padding-right: 70px;
+        .cut-price{
+            text-decoration: line-through;
+  text-decoration-color: red;
+        }
+        .out-of-stock{
+            background-color: rgb(219, 55, 55);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 2rem;
+            width: fit-content;
+        }
+        .in-stock{
+            background-color: rgb(65, 194, 101);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: fit-content;
+            margin-top: 2rem;
+        }
+        .inc-dec-btn{
+            display: flex;
+            margin-top: 20px;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                margin: 0;
+                text-align: center;
+                padding: 0;
+                margin: 0px 30px;
+                font-size: 20px;
+            }
+            button{
+                cursor: pointer;
+                padding: 10px 20px;
+                background-color: rgb(51, 51, 51);
+                color: white;
+                font-size: 20px;
+                transition: 0.3s;
+                &hover{
+                    background-color: rgb(0, 0, 0);
+                }
+            }
+        }
+        .main-btn{
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            button{
+                padding: 10px 40px;
+                font-size: 20px;
+                background-color: rgb(65, 194, 101);
+                border: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.5s;
+                font-family: 'Poppins', sans-serif;
+                &:hover{
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                }
+            }
+        }
+        h1{
+            font-size:70px;
+            color: rgb(47, 47, 47);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            span{
+                font-size: 30px;
+                margin-left: 20px;
+                color: rgb(71, 230, 116);
+            }
+        }
+        p{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            padding-right: 20%;
+        }
+    }
+}
+.farm-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: rgb(214, 90, 90);
+    color: white;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 22px;
+    position: relative;
+    left: 12.5rem;
+    top: 5rem;
+}
+
+.recommendation-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow-x: scroll;
+    
+    .product-card{
+        transition: 0.5s;
+        &:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+       .card{
+        width: 14rem;
+        height: 20rem;
+        border: lightgray solid 2px;
+        border-radius: 6px;
+        overflow: hidden;
+       }
+       .card-div-1{
+        width: 100%;
+        height: 40%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+       .card-div-2{
+        width: 100%;
+        height: 60%;
+        .cart-view{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            button{
+                padding: 10px 50px;
+                border-radius: 22px;
+                background-color: rgb(7, 7, 7);
+                width: fit-content;
+                cursor: pointer;
+                color: white;
+                transition: 0.4s;
+                &:hover{
+                    background-color:black;
+                    color: white;
+                }
+            }
+            p{
+                cursor: pointer;
+            }
+        }
+        p{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .price{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin: 0;
+        }
+        .title{
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .like-status{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: rgb(74, 74, 74);
+        }
+       }
+    }
+}

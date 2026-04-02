@@ -1,0 +1,91 @@
+// .HMCard-container{
+//     background-color: white;
+//     width: 90%;
+//     display: flex;
+//     .helper-profile-img{
+//         flex-basis: 30%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         img{
+//             border-radius: 6px;
+//         }
+//     }
+//     .helper-info{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 6px;
+//         position: relative;
+//         h1{
+//             font-size: 25px;
+//             font-family: 'Mulish', sans-serif;
+//         }
+//         padding: 10px;
+//         p{
+//             font-weight: 600;
+//         }
+//         button{
+//             padding: 5px 20px;
+//             background-color: green;
+//             color: white;
+//             font-family: 'Mulish', sans-serif;
+//             margin-right: 20px;
+//             transition: 0.3s;
+//             border-radius: 22px;
+//             width: 100%;
+//             &:hover{
+//                 background-color: rgb(47, 153, 47);
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width:700px){
+//     .HMCard-container{
+//     height: 12rem;
+//     }
+
+// }
+
+// @media (max-width:700px){
+//     .HMCard-container{
+//         width: 20rem;
+//         flex-direction: column;
+//         height: fit-content;
+//     }
+// }
+
+.hpc-container{
+    height: 20rem;
+    width: 15rem;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .hpc-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: 100%;
+        padding: 5px 5px;
+        img{
+            border-radius: 8px;
+            width: 90%;
+            height: 80%;
+        }
+    }
+    .hpc-2{
+        height: 40%;
+        width: 100%;
+        padding:0px 20px;
+        h1{
+            font-weight: 700;
+            color: rgb(31, 31, 31);
+        }
+    }
+}

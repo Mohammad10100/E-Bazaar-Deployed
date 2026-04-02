@@ -1,0 +1,190 @@
+.cart{
+    .PaymentPage{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        button{
+            width: 20vw;
+            background-color: rgb(25, 25, 25);
+            padding: 10px 20px;
+            color: white;
+            position: relative;
+            left: 1rem;
+        }
+        h1{
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 5rem;
+            font-size: 25px;
+        }
+    }
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    .ctn-btn{
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: rgb(40, 40, 40);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    .div-1{
+        width: 70%;
+        height: 100vh;
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        .cart-text{
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(29, 29, 29);
+        }
+        .membership-banner{
+            width: 80%!important;
+            border: solid 1px lightgray;
+            border-radius: 6px;
+            height: fit-content;
+            padding: 2rem;
+            margin-top: 4rem;
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                
+            }
+        }
+        .empty-cart-message{
+            font-family: 'Poppins', sans-serif;
+            font-size: 35px;
+        }
+        .item-card{
+            background-color: rgb(239, 239, 239);
+            height: 14rem;
+            width: 80%;
+            display: flex;
+            border-radius: 5px;
+            .item-image{
+                height: 14rem;
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .img{
+                    width: 11rem;
+                    height: 9rem;
+                    border-radius: 5px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .item-details{
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+                h1{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 25px;
+                }
+                p{
+                    font-family: 'Poppins', sans-serif;
+                }
+                .qtn-btn{
+                    display: flex;
+                    margin-top: 20px;
+                    gap: 20px;
+                    button{
+                        background-color: rgb(26, 26, 26);
+                        padding: 5px 20px;
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    .div-2{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .checkout-btn{
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            width: 90%;
+            margin-top: 40px;
+        }
+        .checkout-section{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            width: 85%;
+            height: 24rem;
+            background-color: rgb(26, 26, 26);
+            border-radius: 6px;
+        }
+        .payment-button{
+            margin-top: 2rem;
+        }
+    }
+    form{
+        margin-top: 2rem;
+        .payment-btn{
+            background-color: rgb(155, 155, 155);
+            width: 90%;
+            padding: 8px 10px;
+            color: white;
+        }
+    }
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .remove-item{
+        color: white;
+        background-color: lightcoral;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .StripeElement {
+        box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 0.025em;
+  width: 100%;
+  max-width: 500px;
+  width: 90%!important;
+      }
+      
+      .StripeElement--focus {
+        border-color: #4F46E5;
+      }
+      
+      .StripeElement--invalid {
+        border-color: #FFC7EE;
+      }
+}

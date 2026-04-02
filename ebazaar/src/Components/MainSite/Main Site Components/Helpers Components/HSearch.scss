@@ -1,0 +1,41 @@
+.hsearch-container{
+    background-color: rgb(77, 147, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background-image: url(https://img.freepik.com/free-vector/farm-mill-wheat-field-illustration_1284-59601.jpg?w=1060&t=st=1678116982~exp=1678117582~hmac=3f39c7a81bb05b133154e5b6ec31544bbede25fd168a46cc75890a8cd41964e0);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+ 
+    .search-bar-container{
+        width: 80%;
+        h1{
+            font-family: 'Mulish', sans-serif;
+            font-size: 25px;
+            // color: rgb(42, 42, 42);
+            color: white;
+        }
+        input{
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-family: 'Mulish', sans-serif;
+            // border: solid 1px rgb(99, 99, 99);
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+@media (min-width:700px){
+    .hsearch-container{
+        width: 100%;
+        height: 30vh;
+    }
+}
+@media (max-width:700px){
+    .hsearch-container{
+        display: none;
+    }
+}

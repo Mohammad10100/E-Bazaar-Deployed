@@ -1,0 +1,96 @@
+.auth-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    .auth-div-1{
+        background-image: url(https://img.freepik.com/free-vector/hand-drawn-india-lifestyle-illustration_23-2149659961.jpg?w=996&t=st=1678002667~exp=1678003267~hmac=095f8ea7a4c17afb366cb58dff9d0585e3e2a7ebcf08f0f6fd77e5d097aacc96);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .lg-btn{
+        margin-top: 20px;
+        span{
+            color: green;
+            font-family: 'Mulish', sans-serif;
+            cursor: pointer;
+        }
+    }
+    .auth-div-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+        font-family: 'Mulish', sans-serif;
+        }
+        .signIn-text{
+            font-family: 'Mulish', sans-serif;
+            color: green;
+            font-size: 20px;
+        }
+        input{
+            width: 80%;
+            padding: 10px 20px;
+            font-family: 'Mulish', sans-serif;
+            border: solid 2px rgb(222, 222, 222);
+            background-color: rgb(239, 239, 239);
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: 0.5s;
+            &:focus{
+                outline: none;
+                border-color: rgb(76, 199, 76);
+                
+            }
+        }
+        button{
+            width: 80%;
+            background-color: green;
+            font-family: 'Mulish', sans-serif;
+            margin-top: 50px;
+            color: white;
+            padding: 10px 20px;
+            transition: 0.3s;
+            &:hover{
+                background-color: rgb(6, 165, 6);
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+ .auth-div-1{
+    width: 63%;
+    height: 100%;
+ }
+ .auth-div-2{
+    width: 37%;
+    height: 100%;
+    h1{
+        font-size: 40px;
+    }
+ }       
+}
+@media (max-width:1200px){
+    .auth-div-1{
+       width: 63%;
+       height: 100%;
+    }
+    .auth-div-2{
+       width: 37%;
+       height: 100%;
+       h1{
+           font-size: 30px;
+       }
+    }       
+   }
+@media (max-width:700px){
+    .auth-div-1{
+        display: none;
+    }
+    .auth-div-2{
+        width: 100%;
+        h1{
+            font-size: 30px;
+        }
+    }
+}
