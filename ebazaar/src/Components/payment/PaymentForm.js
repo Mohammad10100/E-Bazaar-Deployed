@@ -52,7 +52,7 @@ export default function PaymentForm({ success, setSuccess }) {
         const { error, paymentIntent } = await stripe.confirmPayment({
             elements,
             confirmParams: {
-                return_url: "http://localhost:3000/profile/order-page",
+                return_url: `${window.location.origin}/profile/order-page`,
             },
             redirect: "if_required",
         });

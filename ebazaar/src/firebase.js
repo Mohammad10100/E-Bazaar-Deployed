@@ -3,14 +3,6 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 import { getAuth } from "firebase/auth";
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyByM5BOEIhDcRfJpTlNpMDpvC5q-4k-TAA",
-//   authDomain: "ebazaar-final.firebaseapp.com",
-//   projectId: "ebazaar-final",
-//   storageBucket: "ebazaar-final.appspot.com",
-//   messagingSenderId: "193130422804",
-//   appId: "1:193130422804:web:325f0d99a3089e1c80bd01"
-// };
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
